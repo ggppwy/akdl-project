@@ -1,3 +1,6 @@
-box(size = vec(10,10,0.1), pos = vec(0,0,0))
-sphere(size = vec(10,10,0.1), pos = vec(-10,0,0))
-pyramid(size = vec(10,10,0.1), axis = vec(0,1,0), pos = vec(10,-5,0))
+
+face = box()
+eye1 = sphere(radius=0.1, pos = vec(0.2,0.2,0.5), color = color.black)
+eye2 = sphere(radius=0.1, pos = vec(-0.2,0.2,0.5), color = color.black)
+
+A = compound([face, eye1, eye2])
